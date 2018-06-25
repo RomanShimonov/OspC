@@ -1,0 +1,1000 @@
+  349  cd shared
+  350  ls
+  351  cd ..
+  352  ls
+  353  cd btwisto
+  354  ls
+  355  cd /
+  356  ls
+  357  cd Public
+  358  ls
+  359  pwd
+  360  ls
+  361  cd /
+  362  ls
+  363  ssh btwisto@wallace.hunter.cuny.edu
+  364  ls
+  365  cd codon_block_cities_min_results/
+  366  ls
+  367  cd ..
+  368  ls
+  369  history
+  370  btwisto@darwin.hunter.cuny.edu
+  371  lls
+  372  ls
+  373  cd Documents
+  374  ls
+  375  ssh btwisto@darwin.hunter.cuny.edu
+  376  history
+  377  history
+  378  cd ..
+  379  history
+  380  ssh btwisto@darwin.hunter.cuny.edu
+  381  history
+  382  ls
+  383  cd Public
+  384  ls
+  385  cd .
+  386  cd ..
+  387  ls
+  388  cd codon_block_cities_min_results/
+  389  ls
+  390  history
+  391  ls
+  392  cd ..
+  393  ls
+  394  cd mwu
+  395  ls
+  396  history
+  397  cd .
+  398  cd //
+  399  cd ..
+  400  ls
+  401  cd ..
+  402  cd /
+  403  ls
+  404  cd home
+  405  ls
+  406  cd btwisto
+  407  ls
+  408  cd Public
+  409  ls
+  410  cd ..
+  411  ssh btwisto@darwin.hunter.cuny.edu
+  412  ls
+  413  cd Documents
+  414  ls
+  415  cd ..
+  416  ls
+  417  cd /
+  418  ls
+  419  cd /home
+  420  ls
+  421  cd btwisto/
+  422  ls
+  423  pwd
+  424  grep "weigang"
+  425  cd ..
+  426  ls
+  427  cd btwisto/
+  428  ls
+  429  cd btwisto
+  430  less btwisto
+  431  ls
+  432  less weigangCodes.R 
+  433  ls
+  434  cd AANeighbors/
+  435  ls
+  436  cd ..
+  437  ls
+  438  cd MonteCarlo
+  439  cd MonteCarloClub/
+  440  ls
+  441  ssh btwisto@wallace.cuny.edu
+  442  ssh btwisto@wallace.hunter.cuny.edu
+  443  ls AA
+  444  ls AANeighbors/
+  445  cd WPolVol
+  446  WHydroVol
+  447  cd WPolVol
+  448  ls
+  449  cd AANeighbors/
+  450  cd WPolVol
+  451  ls
+  452  cd Public/
+  453  ls
+  454  cd ..
+  455  cd btwisto
+  456  less btwisto 
+  457  cd Documents
+  458  cd /
+  459  cd shared/weigang
+  460  cd home/shared/weigang
+  461  ls
+  462  ls -rtl
+  463  cd
+  464  mkdir ngs-practice
+  465  cd ngs-practice/
+  466  ln -s /home/shared/weigang/SAMN07178057.current.gb ref.fa
+  467  ln -s /home/shared/weigang/SAMN07178057.current.gb ref.gb
+  468  ln -s /home/shared/weigang/WGC067462_hunhewenku_B106_combined_R* .
+  469  ls -lrt
+  470  rm ref.fa
+  471  l
+  472  ls -lrt
+  473  less ref.gb 
+  474  bioseq -i'genbank' -o'fasta' ref.gb > ref.fa 
+  475  bioseq -l ref.fa 
+  476  bwa index ref.fa 
+  477  ls -lrt
+  478  bwa mem ref.fa WGC067462_hunhewenku_B106_combined_R1.fastq.gz WGC067462_hunhewenku_B106_combined_R2.fastq.gz > B106.sam &
+  479  rm ref.fa
+  480  bwa mem ref.fa WGC067462_hunhewenku_B106_combined_R1.fastq.gz WGC067462_hunhewenku_B106_combined_R2.fastq.gz > B106.sam 
+  481  B106.sam
+  482  ls
+  483  cd /
+  484  ls
+  485  history
+  486  ls
+  487  cd home
+  488  ls
+  489  cd shared
+  490  ls
+  491  ls ^ngs
+  492  cd /
+  493  cd
+  494  ls
+  495  cd ngs-practice
+  496  ls
+  497  less B106.sam
+  498  bioseq --help
+  499  ~bwa ==help
+  500  bwa index ref.fa
+  501  ls
+  502  cd ngs-practice
+  503  samtoos view -b B106.sam > B106.sam
+  504  samtools view -b B106.sam > B106.sam
+  505  samtools view -b B106.sam > B106.bam
+  506  samtools sort B106.bam B106.sorted
+  507  samtools index B106.sorted
+  508  ls 
+  509  samtools sort B106.bam > B106.sorted
+  510  samtools sort B106.bam  B106.sorted
+  511  ls
+  512  samtools index  B106.sorted
+  513  samtools depth B106.sorted.bam >B106.depth
+  514  bedtools coverage -abam sample.sorted.bam -b refs.bed -d > B106.bedtools.cov
+  515  bedtools coverage -abam sample.sorted.bam -b refs.bed -d > B106.bedtools.cov 
+  516  bedtools coverage -abam B106.sorted.bam -b refs.bed -count
+  517  bedtools coverage -abam B106.sorted.bam -b refs.bed -count >B106.bedtools.cov
+  518  bedtools coverage -abam B106.sorted.bam -b refs.bed -counts >B106.bedtools.cov
+  519  bedtools coverage -abam B106.sorted.bam -b ref.bed -counts >B106.bedtools.cov
+  520  bedtools coverage -abam B106.sorted.bam -b refs.bed -counts >B106.bedtools.cov
+  521  ssh btwisto@wallace.hunter.cuny.edu
+  522  ls
+  523  cd Documents/
+  524  ls
+  525  mkdir Rao_Data
+  526  ls
+  527  cd Rao_Data/
+  528  wget ftp://ftp.ncbi.nlm.nih.gov/geo.series/GSE63nnn/suppl/GSE63525_GM12878_combined_intrachromosomal_contact_matrices.tar.gz
+  529  wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/suppl/GSE63525_GM12878_combined_intrachromosomal_contact_matrices.tar.gz
+  530  wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63525/suppl/GSE63525_GM12878_combined_intrachromosomal_contact_matrices.tar.gz
+  531  ls
+  532  tar -zxvf GSE63525_GM12878_combined_intrachromosomal_contact_matrices.tar.gz 
+  533  ls
+  534  cd GM12878_combined/
+  535  ls
+  536  cd 10kb_resolution_intrachromosomal/
+  537  ls
+  538  cd chr18
+  539  ls
+  540  cd MAPQGE30/
+  541  ls
+  542  head chr18_10kb.RAWobserved 
+  543  wc  chr18_10kb.RAWobserved 
+  544  wc 
+  545  exit
+  546  ls
+  547  cd Documents/
+  548  ls
+  549  cd Rao_Data/
+  550  ls
+  551  cd GM12878_combined/
+  552  ls 
+  553  ls -l *
+  554  ls 
+  555  cd 5kb_resolution_intrachromosomal/
+  556  ls 
+  557  cd chr1
+  558  ls 
+  559  cd MAPQGE30
+  560  ls
+  561  ls -l *
+  562  ls -l chr1_5kb.RAWobserved 
+  563  ls -l --blocksize=MB chr1_5kb.RAWobserved 
+  564  ls -l --block-size=MB chr1_5kb.RAWobserved 
+  565  ls 
+  566  cd ..
+  567  ls 
+  568  cd MAPQGE30
+  569  ls 
+  570  cd ..
+  571  cd .. 
+  572  cd ..
+  573  ls
+  574  cd 500kb_resolution_intrachromosomal/
+  575  ls 
+  576  cd chr17
+  577  ls 
+  578  cd MAPQGE30
+  579  ls
+  580  ls 
+  581  ls -l --block-size=MB
+  582  ls -l 
+  583  pwd
+  584  ls 
+  585  ls -l
+  586  file  *.RAWobserved
+  587  exit
+  588  ls -lrt
+  589  ls
+  590  cat genomefinder.txt 
+  591  cut -f4 genomefinder.txt 
+  592  cut -f4 genomefinder.txt |wc
+  593  cut -f4 genomefinder.txt | while read line; do bioseq -f $line; done
+  594  cut -f4 genomefinder.txt | while read line; do bioseq -f $line; done > ospC-alleles.fas
+  595  bioseq -l ospC-alleles.fas 
+  596  bioseq -f CP001422 -o'genbank' > CP001422.gb
+  597  bioseq -f CP001484 -o'genbank' > CP001484.gb
+  598  bioseq -f CP001271 -o'genbank' > CP001271.gb
+  599  bioseq -f CP001535 -o'genbank' > CP001535.gb
+  600  bioseq -f CP001550 -o'genbank' > CP001550.gb
+  601  bioseq -f CP001493 -o'genbank' > CP001493.gb
+  602  bioseq -F -i'genbank' CP001422.gb > CP001422.nuc
+  603  bioseq -l CP001422.nuc 
+  604  bioseq -p're:_B0018' CP001422.nuc 
+  605  bioseq -p're:_B0018' CP001422.nuc > CP001422.ospC
+  606  tail(history)
+  607  history
+  608  ls
+  609  bioseq -F -i'genbank' CP001484.gb > CP001484.nuc
+  610  bioseq -p're:_B0018' CP001484.nuc 
+  611  history
+  612  bioseq -l CP001484.nuc 
+  613  bioseq -p're:_B0020' CP001484.nuc 
+  614  history
+  615  ls
+  616  bioseq -F -i'genbank' CP001271.gb > CP001271.nuc
+  617  bioseq -l CP001271.nuc 
+  618  bioseq -p're:_B19' CP001271.nuc 
+  619  history
+  620  bioseq -l CP001271.nuc 
+  621  ls
+  622  bioseq -F -i'genbank' CP001484.gb > CP001484.nuc
+  623  bioseq -l CP001484.nuc
+  624  bioseq -p 're:_B0020' CP001484.nuc >CP001484.ospC
+  625  bioseq -F -i'genbank' CP001271.gb > CP001271.nuc
+  626  bioseq -l CP001271.nuc
+  627  bioseq -p 're:_B19' CP001271.nuc >CP001271.ospC
+  628  bioseq -F -i'genbank' CP001535.gb > CP001535.nuc
+  629  bioseq -l CP001535.nuc
+  630  bioseq -p 're:_B19' CP001535.nuc >CP001535.ospC
+  631  bioseq -F -i'genbank' CP001550.gb > CP001550.nuc
+  632  bioseq -l CP001550.nuc
+  633  bioseq -p 're:_B19' CP001550.nuc >CP001550.ospC
+  634  bioseq -p 're:_B19' CP001493.nuc >CP001493.ospC
+  635  bioseq -F -i'genbank' CP001493.gb > CP001493.nuc
+  636  bioseq -l CP001493.nuc
+  637  bioseq -p 're:_B19' CP001493.nuc >CP001493.ospC
+  638  ls
+  639  cat CP001422.ospC
+  640  ls
+  641  history
+  642  bioseq -F -i'genbank' CP001484.gb >CP001484.nuc
+  643  ls
+  644  locate bioseq
+  645  ls 
+  646  bioseq -F -i'genbank' CP001484.gb >CP001484.nuc
+  647  ssh btwisto@wallace.hunter.cuny.edu
+  648  btwisto@wallace.hunter.cuny.edu
+  649  ssh btwisto@wallace.hunter.cuny.edu
+  650  ls
+  651  bioseq -t3 <CP001271.ospC
+  652  bioseq -t1 <CP001271.ospC
+  653  bioseq -t6 <CP001271.ospC
+  654  cat CP001271.ospC
+  655  bioseq -t1 <CP001271.ospC
+  656  ls
+  657  head ospC-alleles.fas
+  658  cat  ospC-alleles.fas
+  659  ls
+  660  head -n20 ospC-alleles.fas 
+  661  head CP001422.ospC
+  662  bioseq -F -i'genbank' CP001484.gb >CP001484.nuc
+  663  bioseq -F -i'genbank' CP001484.gb 
+  664  bioseq -l CP001493.nuc
+  665  cat CP001493.nuc
+  666  bioseq -l CP001493.nuc
+  667  bioseq -l ospC-alleles.fas 
+  668  bioseq -d 're:CP001535' ospC-alleles.fas >dospC-alleles.fas
+  669  bioseq -l dospC-alleles.fas 
+  670  bioseq -d 're:CP001422' dospC-alleles.fas >dospC-alleles.fas
+  671  bioseq -l dospC-alleles.fas 
+  672  bioseq -d 're:CP001535' ospC-alleles.fas >dospC-alleles.fas
+  673  bioseq -l dospC-alleles.fas 
+  674  bioseq -d 're:CP001422' dospC-alleles.fas >dospC-alleles.fas
+  675  bioseq -l dospC-alleles.fas 
+  676  bioseq -d 're:CP001422' dospC-alleles.fas >dospC-alleles.fas
+  677  bioseq -l dospC-alleles.fas 
+  678  bioseq -d 're:CP001535' ospC-alleles.fas >dospC-alleles.fas
+  679  bioseq -l dospC-alleles.fas 
+  680  bioseq -l ospC-alleles.fas 
+  681  bioseq -d 're:CP001422' dospC-alleles.fas >d2ospC-alleles.fas
+  682  bioseq -d 're:CP001484' d2ospC-alleles.fas >d3ospC-alleles.fas
+  683  bioseq -l d3ospC-alleles.fas 
+  684  bioseq -d 're:CP001271' d3ospC-alleles.fas >d4ospC-alleles.fas
+  685  bioseq -d 're:CP001550' d4ospC-alleles.fas >d5ospC-alleles.fas
+  686  bioseq -d 're:CP001493' d5ospC-alleles.fas >d6ospC-alleles.fas
+  687  bioseq -l d6ospC-alleles.fas 
+  688  bioseq -t1 d6ospC-alleles.fas >t6ospC-alleles.fas
+  689  head t6ospC-alleles.fas 
+  690  head -n40 t6ospC-alleles.fas 
+  691  ls
+  692  cat CP001484.ospC CP001550.ospC 
+  693  cat *.ospC 
+  694  ls
+  695  cat *.ospC d6ospC-alleles.fas <-d7ospC-alleles.fas
+  696  cat *.ospC d6ospC-alleles.fas > d7ospC-alleles.fas
+  697  bioseq -l d7ospC-alleles.fas 
+  698  bioseq -t3 d7ospC-alleles.fas 
+  699  bioseq -t1 d7ospC-alleles.fas 
+  700  ls
+  701  pwd
+  702  scp btwisto@wallace.hunter.cuny.edu  /home/btwisto/d7ospC-alleles.fas  /mnt/c/Users/brian/OneDrive/Documents/Qiu
+  703  scp btwisto@wallace.hunter.cuny.edu  /home/btwisto/d7ospC-alleles.fas  /mnt/c/Users/brian/OneDrive/Documents/Qiu/ospC-alleles.txt
+  704  cat d7ospC-alleles.fas 
+  705  ls
+  706  bioseq -l ospC-alleles.fas 
+  707  ls
+  708  bioseq -l dospC-alleles.fas 
+  709  ls
+  710  bioseq -l d7ospC-alleles.fas 
+  711  head -n=20  d7ospC-alleles.fas 
+  712  head  -n20  d7ospC-alleles.fas 
+  713  bioseq -t3 d7ospC-alleles.fas > t3d7ospC-alleles.fas
+  714  head -n20 t3d7ospC-alleles.fas 
+  715  scp btwisto@wallace.hunter.cuny.edu  /home/btwisto/d7ospC-alleles.fas  cdq
+  716  scp btwisto@wallace.hunter.cuny.edu :/home/btwisto/d7ospC-alleles.fas  /home/mnt/c/Users/brian/OneDrive/Documents/Qiu
+  717  scp btwisto@wallace.hunter.cuny.edu :/home/btwisto/d7ospC-alleles.fas  c/Users/brian/OneDrive/Documents/Qiu
+  718  scp btwisto@wallace.hunter.cuny.edu :/home/btwisto/d7ospC-alleles.fas  C/Users/brian/OneDrive/Documents/Qiu
+  719  head -n20 t3d7ospC-alleles.fas 
+  720  cat t3d7ospC-alleles.fas 
+  721  clustalw2 -help
+  722  ls
+  723  clustalw2 -INFILE=t3d7ospC-alleles.fas -ALIGN -TREE -OUTFILE=clustalospC-alleles.txt -NEWTREE=treefile.ext   MATRIX=BLOSUM TYPE=PROTEIN
+  724  bioseq -t1 d7ospC-alleles.fas > t1d7ospC-alleles.fas
+  725  ls
+  726  clustalw2 -INFILE=t1d7ospC-alleles.fas -ALIGN -TREE -OUTFILE=clustalospC-alleles.txt -NEWTREE=treefile.ext   MATRIX=BLOSUM TYPE=PROTEIN
+  727  clustalw -infile=t1d7ospC-alleles.fas -align -tree -outfile=clustalospC-alleles.txt -newtree=opsCtreefile.ext   matrix=BLOSUM  type=PROTEIN
+  728  clustalw -infile=t1d7ospC-alleles.fas -align -tree -outfile=clustalospC-alleles.txt -newtree=opsCtreefile.ext   matrix=blosum  type=protein
+  729  clustalw -infile=t1d7ospC-alleles.fas -align -tree -outfile=clustalospC-alleles.txt -newtree=opsCtreefile.ext   -matrix=blosum  type=protein
+  730  clustalw -infile=t1d7ospC-alleles.fas -align -tree -outfile=clustalospC-alleles.txt -newtree=opsCtreefile.ext   -matrix=blosum  -type=protein
+  731  ls
+  732  cat clusalospC-alleles
+  733  cat clustalospC-alleles.txt 
+  734  ls 
+  735  mkdir epitope_project 
+  736  pwd
+  737  mv t1d7ospC-alleles.fas t3d7ospC-alleles.fas  clustalospC-alleles.txt  /home/btwisto/epitope_project/
+  738  mv genomefinder.txt  /home/btwisto/epitope_project/
+  739  mv d7ospC-alleles.fas home/btwisto/epitope_project/
+  740  mv d7ospC-alleles.fas   /home/btwisto/epitope_project/ 
+  741  cd epitope_project/
+  742  ls 
+  743  cd ...
+  744  cd ..
+  745  cat dospC-alleles.fas 
+  746  bioseq -l  dospC-alleles.fas 
+  747  ls
+  748  rm  CP*
+  749  ls
+  750  head -n20 opsC-alleles.fas
+  751  ls
+  752  cat ospC-alleles.fas 
+  753  bioseq -l ospC-alleles.fas 
+  754  mv ospC-alleles.fas /home/btwisto/epitope_project/
+  755  ls
+  756  rm d*
+  757  ls
+  758  mv opsCtreefile.ext  /home/btwisto/epitope_project/
+  759  rm t6ospC-alleles.fas 
+  760  ls
+  761  cd epitope_project/
+  762  ls
+  763  cat ospCtreefile.ext
+  764  cat t1d7ospC-alleles.fas 
+  765  ls
+  766  cat clustalospC-alleles.txt 
+  767  btwisto@wallace.hunter.cuny.edu
+  768  ssh btwisto@wallace.hunter.cuny.edu
+  769  ls 
+  770  cd epitope_project/
+  771  ls
+  772  cat genomefinder.txt 
+  773  history
+  774  scp btwisto@darwin.hunter.cuny.edu: /home/btwisto/epitope_project/   /mnt/c/Users/brian/OneDrive/Documents
+  775  William1!
+  776  scp btwisto@darwin.hunter.cuny.edu: /home/btwisto/epitope_project/genomefinder.txt    /mnt/c/Users/brian/OneDrive/Documents
+  777  scp btwisto@darwin.hunter.cuny.edu: /home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/OneDrive/Documents
+  778  scp btwisto@darwin.hunter.cuny.edu: /home/btwisto/epitope_project/genomefinder.txt/  /mnt/c/Users/brian/OneDrive/Documents
+  779  scp btwisto@darwin.hunter.cuny.edu: /home/btwisto/epitope_project/genomefinder.txt/  /mnt/c/Users/brian/OneDrive/
+  780  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt/  /mnt/c/Users/brian/OneDrive/
+  781  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt/  C/Users/brian/OneDrive/
+  782  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt  /C:/Users/brian/OneDrive/
+  783  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt  C:\Users\brian\OneDrive\Documents\Qiu
+  784  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt  /C:/Users/brian/OneDrive/Documents/Qiu
+  785  scp btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt  /C:/Users/brian/
+  786  quit
+  787  exit
+  788  ls
+  789  cd epitope_project/
+  790  ls
+  791  head -n20 d7ospC-alleles.fas 
+  792  bioseq -l d7ospC-alleles.fas 
+  793  bioseq -n d7ospC-alleles.fas 
+  794  bioseq -t1 d7ospC-alleles.fas >t1ospC.fas 
+  795  muscle -in t1ospC.fas -out t1ospC.aln -clwstrict 
+  796  cat t1ospC.aln
+  797  bioaln -m t1ospC.aln
+  798  bioaln -o 'fasta
+  799  bioaln -o 'fasta
+  800  ' t1ospC.aln  >t1ospC.pep.fas
+  801  ls
+  802  bioaln -o 'fasta' t1ospC.aln 
+  803  bioaln -o 'fasta' t1ospC.aln >t1ospC.pep.fas
+  804  FastTree t1ospC.pep.fas >t1ospC.dnd
+  805  biotree -t t1ospC.dnd
+  806  bioaln -s '1,20' t1ospC.aln
+  807  bioaln -s '1,30' t1ospC.aln
+  808  bioaln -s '2,31' t1ospC.aln
+  809  cd epitope_project/
+  810  ls
+  811  cat genomefinder.txt
+  812  cat t1ospC.aln
+  813  scp -r btwisto@wallace.hunter.cuny.edu  C:\Users\brian\OneDrive\Documents\Qiu
+  814  ls 
+  815  scp btwisto@wallace.hunter.cuny.edu:home/btwisto/epitope_project/genomefinder.txt  C:\Users\brian\OneDrive\Documents\Qiu
+  816  scp btwisto@wallace.hunter.cuny.edu :home/btwisto/epitope_project/genomefinder.txt  C:\Users\brian\OneDrive\Documents\Qiu
+  817  scp btwisto@wallace.hunter.cuny.edu:home/btwisto/epitope_project/genomefinder.txt  C:\Users\brian\OneDrive\Documents\Qiu
+  818  ls 
+  819  cd /
+  820  ls 
+  821  cd home
+  822  ls
+  823  cd btwisto
+  824  ls 
+  825  cd epitope_project/
+  826  ls 
+  827  scp btwisto@wallace.hunter.cuny.edu:home/btwisto/epitope_project/genomefinder.txt  C:/Users/brian/OneDrive/Documents/Qiu
+  828  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /C:/Users/brian/OneDrive/Documents/Qiu
+  829  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/OneDrive/Documents/Qiu
+  830  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/C/Users/brian/OneDrive/Documents/Qiu
+  831  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /Users/brian/OneDrive/Documents/Qiu
+  832  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/OneDrive/Documents/Qiu
+  833  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /home/mnt/c/Users/brian/OneDrive/Documents/Qiu
+  834  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/OneDrive/Documents/
+  835  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/
+  836  scp btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/
+  837  pwd
+  838  scp  btwisto@wallace.hunter.cuny.edu:/home/btwisto/epitope_project/ /mnt/c/ 
+  839  ls 
+  840  bioaln -w '1:50
+  841  bioaln -w '1:20' t1ospC.aln
+  842  bioaln -w '1,20' t1ospC.aln
+  843  history
+  844  ssh btwisto@darwin.hunter.cuny.edu
+  845  btwisto@darwin.hunter.cuny.edu:/home/btwisto/epitope_project/genomefinder.txt /mnt/c/Users/brian/OneDrive/Documents/Qiu
+  846  cd epitope_project/
+  847  ls
+  848  t1ospC.aln
+  849  head -n23 t1ospC.aln
+  850  head -n25 t1ospC.aln
+  851  head -30 t1ospC.aln
+  852  head -25 t1ospC.aln
+  853  cd /
+  854  ls
+  855  cd //
+  856  ls
+  857  cd /home/
+  858  ls
+  859  cd weigang/
+  860  ls
+  861  cd ..
+  862  ls
+  863  cd shared/weigang/
+  864  ls
+  865  cat make-ospc-sed-files.txt 
+  866  cp make-ospc-sed-files.txt  /home/btwisto/epitope_project/
+  867  cd ..
+  868  cd..
+  869  cd ..
+  870  ls
+  871  cd btwisto/
+  872  cd epitope_project/
+  873  ls'
+  874  ls
+  875  cat make-ospc-sed-files.txt 
+  876  bioseq -l t1ospC.fas
+  877  sed --help
+  878  cat make-ospc-sed-files.txt 
+  879  bioseq -l t1ospC.fas
+  880  cat genomefinder.txt 
+  881  la
+  882  ls
+  883  bioseq -F CP001422 -i 'genbank' CP001422.gb 
+  884  bioseq -f CP001422 -o 'genbank' >  CP001422.gb 
+  885  cat CP001422.gb
+  886  bioseq -F -i 'genbank' CP001422.gb > CP001422.nuc
+  887  bioseq -l CP1001422.nuc
+  888  bioseq -l CP001422.nuc
+  889  ls
+  890  cat t1ospC.aln
+  891  bioseq -l CP001422.nuc
+  892  bioseq -p 're:_B0018' CP001422.nuc
+  893  cat CP001422.nuc
+  894  bioseq -p 're:_B0018' CP001422.nuc > CP001422.ospC
+  895  cat CP001422.ospC
+  896  head -n50 CP001422.gb
+  897  cat t1ospC.aln
+  898  ls
+  899  d7ospC-alleles.fas
+  900  cat d7ospC-alleles.fas
+  901  sed -i 's/BBU64B_B0018|16904|17539|1|ospC  ~/new/g' ospCrewrite.fas 
+  902  sed -i 's/BBU64B_B0018/CP001422/g' ospCrewrite.fas 
+  903  sed -i 's/BBU64B_B0018/CP001422/g' d7ospC-alleles.fas >r1ospC.fas 
+  904  bioseq -l r1ospC.fas 
+  905  cat r1ospC.fas 
+  906  sed -i 's/'BBU64B_B0018'/CP001422/g' d7ospC-alleles.fas >r1ospC.fas 
+  907  cat r1ospC.fas 
+  908  sed -i 's/BBU64B/CP001422/g' d7ospC-alleles.fas
+  909  head -n50 d7ospC-alleles.fas 
+  910  tail -n50 d7ospC-alleles.fas 
+  911  sed -i 's/CP001422/CP001422 /g' d7ospC-alleles.fas
+  912  tail -n50 d7ospC-alleles.fas 
+  913  head -n50 d7ospC-alleles.fas 
+  914  bioseq -f CP001484 -o'genbank' > CP001484.gb  
+  915  bioseq -F -i 'genbank'  CP001484.gb > CP001422.nuc
+  916  bioseq -l CP001422.nuc
+  917  sed -i 's/BBUCA112A_B0020/CP001484 /g' d7ospC-alleles.fas
+  918  head -n50 d7ospC-alleles.fas 
+  919  bioseq -f CP001271 -o'genbank' > CP001271.gb  
+  920  bioseq -F -i 'genbank'  CP001271.gb > CP001271.nuc
+  921  bioseq -l CP001271.nuc
+  922  sed -i 's/Bbu156a_B19/CP001271  /g' d7ospC-alleles.fas
+  923  head -n50 d7ospC-alleles.fas 
+  924  bioseq -f CP001535 -o'genbank' > CP001535.gb  
+  925  bioseq -F -i 'genbank'  CP001535.gb > CP001535.nuc
+  926  bioseq -l CP001535.nuc
+  927  sed -i 's/BBU118A_B19/CP001535  /g' d7ospC-alleles.fas
+  928  head -n50 d7ospC-alleles.fas 
+  929  bioseq -f CP001550 -o'genbank' > CP001550.gb  
+  930  bioseq -F -i 'genbank'  CP001550.gb > CP001550.nuc
+  931  bioseq -l CP001550.nuc
+  932  sed -i 's/BBU29805_B19/CP001550  /g' d7ospC-alleles.fas
+  933  head -n50 d7ospC-alleles.fas 
+  934  head -n70 d7ospC-alleles.fas 
+  935  bioseq -f CP001493 -o'genbank' > CP001493.gb 
+  936  bioseq -F -i 'genbank'  CP001493.gb > CP001493.nuc
+  937  bioseq -l CP001493.nuc
+  938  sed -i 's/BBU94A_B19/CP001493  /g' d7ospC-alleles.fas
+  939  head -n70 d7ospC-alleles.fas 
+  940  ls
+  941  cat r1ospC.fas 
+  942  rm r1ospC.fas 
+  943  ls
+  944  ls 
+  945  cd epitope_project/
+  946  pwd
+  947  cat ospC3.labels.sed
+  948  cat d8ospC-alleles.fas 
+  949  cat ospC3.labels.sed
+  950  sed --help
+  951  sed -i 's/>AY275222/>T_RI_AY275222/g'  d8ospC-alleles.fas 
+  952  cat d9ospC-alleles.fas 
+  953  cat d8ospC-alleles.fas 
+  954  grep 'A_NY' ospC3.labels.sed 
+  955  grep '^>A' d8ospC-alleles.fas 
+  956  grep '^>A' d8ospC-alleles.fas >grexp.txt
+  957  cat grexp.txt
+  958  cat grexp.txt  | sed -i 's/Borrelia/Bor/g' 
+  959  for i in 'cat ospC3.labels.sed' do sudo $i d8ospC-alleles.fas done 
+  960  cat ospC3.labels.sed 
+  961  sed 's/$/\|/g'   ospC3.labels.sed 
+  962  cat ospC3.labels.sed 
+  963  sed 's/$/  d8ospC-alleles.fas/g'   ospC3.labels.sed  >> ospC4.labels.sed 
+  964  cat ospC4.labels.sed 
+  965  for i in 'cat ospC4.labels.sed
+  966  for i in 'cat ospC4.labels.sed' do sudo $i done
+  967  cat d8ospC-alleles.fas 
+  968  ospC4
+  969  cat ospC4.labels.sed 
+  970  sed 's/$/ \| /g'   ospC4.labels.sed  > ospC5.labels.sed 
+  971  cat ospC5.labels.sed 
+  972  sed -i 's/>X69596/>A_NY_X69596/g'  d8ospC-alleles.fas | sed -i 's/>EF592541/>A3_IL_EF592541/g'  d8ospC-alleles.fas | sed -i 's/>CP001422/>B_NY_CP001422/g'  d8ospC-alleles.fas | sed -i 's/>DQ437462/>C_MD_DQ437462/g'  d8ospC-alleles.fas | sed -i 's/>EF592543/>C3_MN_EF592543/g'  d8ospC-alleles.fas | sed -i 's/>CP001484/>D_RI_CP001484/g'  d8ospC-alleles.fas | sed -i 's/>EF592544/>D3_WI_EF592544/g'  d8ospC-alleles.fas | sed -i 's/>AY275221/>E_RI_AY275221/g'  d8ospC-alleles.fas | sed -i 's/>EF592545/>E3_WI_EF592545/g'  d8ospC-alleles.fas | sed -i 's/>L42896/>F_RI_L42896/g'  d8ospC-alleles.fas | sed -i 's/>EF592547/>F3_WI_EF592547/g'  d8ospC-alleles.fas | sed -i 's/>AY275223/>G_RI_AY275223/g'  d8ospC-alleles.fas | sed -i 's/>CP001271/>H_MN_CP001271/g'  d8ospC-alleles.fas | sed -i 's/>FJ932733/>H3_CA_FJ932733/g'  d8ospC-alleles.fas | sed -i 's/>AY275219/>I_CT_AY275219/g'  d8ospC-alleles.fas | sed -i 's/>FJ932734/>I3_CA_FJ932734/g'  d8ospC-alleles.fas | sed -i 's/>CP001535/>J_WI_CP001535/g'  d8ospC-alleles.fas | sed -i 's/>AY275214/>K_NY_AY275214/g'  d8ospC-alleles.fas | sed -i 's/>EU375832/>L_MN_EU375832/g'  d8ospC-alleles.fas | sed -i 's/>CP001550/>M_MI_CP001550/g'  d8ospC-alleles.fas | sed -i 's/>EU377775/>N_NY_EU377775/g'  d8ospC-alleles.fas | sed -i 's/>AY275222/>T_RI_AY275222/g'  d8ospC-alleles.fas | sed -i 's/>CP001493/>U_RI_CP001493/g'  d8ospC-alleles.fas 
+  973  cat d8ospC-alleles.fas 
+  974  sed -i 's/>X69596/>A_NY_X69596/g'  d8ospC-alleles.fas | sed -i 's/>EF592541/>A3_IL_EF592541/g'  d8ospC-alleles.fas | sed -i 's/>CP001422/>B_NY_CP001422/g'  d8ospC-alleles.fas | sed -i 's/>DQ437462/>C_MD_DQ437462/g'  d8ospC-alleles.fas | sed -i 's/>EF592543/>C3_MN_EF592543/g'  d8ospC-alleles.fas | sed -i 's/>CP001484/>D_RI_CP001484/g'  d8ospC-alleles.fas | sed -i 's/>EF592544/>D3_WI_EF592544/g'  d8ospC-alleles.fas | sed -i 's/>AY275221/>E_RI_AY275221/g'  d8ospC-alleles.fas | sed -i 's/>EF592545/>E3_WI_EF592545/g'  d8ospC-alleles.fas | sed -i 's/>L42896/>F_RI_L42896/g'  d8ospC-alleles.fas | sed -i 's/>EF592547/>F3_WI_EF592547/g'  d8ospC-alleles.fas | sed -i 's/>AY275223/>G_RI_AY275223/g'  d8ospC-alleles.fas | sed -i 's/>CP001271/>H_MN_CP001271/g'  d8ospC-alleles.fas | sed -i 's/>FJ932733/>H3_CA_FJ932733/g'  d8ospC-alleles.fas | sed -i 's/>AY275219/>I_CT_AY275219/g'  d8ospC-alleles.fas | sed -i 's/>FJ932734/>I3_CA_FJ932734/g'  d8ospC-alleles.fas | sed -i 's/>CP001535/>J_WI_CP001535/g'  d8ospC-alleles.fas | sed -i 's/>AY275214/>K_NY_AY275214/g'  d8ospC-alleles.fas | sed -i 's/>EU375832/>L_MN_EU375832/g'  d8ospC-alleles.fas | sed -i 's/>CP001550/>M_MI_CP001550/g'  d8ospC-alleles.fas | sed -i 's/>EU377775/>N_NY_EU377775/g'  d8ospC-alleles.fas | sed -i 's/>AY275222/>T_RI_AY275222/g'  d8ospC-alleles.fas | sed -i 's/>CP001493/>U_RI_CP001493/g'  d8ospC-alleles.fas 
+  975  cat d9ospC-alleles.fas 
+  976  while read LINE do  echo "$LINE" done 
+  977  cat d8ospC-alleles.fas >d9ospC-alleles.fas 
+  978  cat d9ospC-alleles.fas 
+  979  sed 
+  980  cat ospC3.labels.sed 
+  981  cat ospC5.labels.sed 
+  982  sed 's/d8/d9/g' ospC5.labels.sed 
+  983  cat  ospC5.labels.sed 
+  984  echo sed 's/d8/d9/g' ospC5.labels.sed >ospC5.labels.sed  
+  985  cat ospC5.labels.sed 
+  986  cat ospC4.labels.sed 
+  987  cat ospC4.labels.sed >ospC5.labels.sed 
+  988  cat ospC5.labels.sed 
+  989  echo sed 's/d8/d9/g' <ospC5.labels.sed >ospC5.labels.sed  
+  990  cat ospC5.labels.sed 
+  991  cat ospC4.labels.sed >ospC5.labels.sed 
+  992  cat ospC5.labels.sed >
+  993  cat sed 's/d8/d9/g' ospC5.labels.sed >ospC5.labels.sed  
+  994  cat ospC5.labels.sed| sed 's/d8/d9/g' >ospC5.labels.sed  
+  995  cat ospC5.labels.sed 
+  996  cat ospC4.labels.sed >ospC5.labels.sed 
+  997  cat ospC5.labels.sed 
+  998  sed 's/d8/d9/g' ospC5.labels.sed >ospC6.labels.sed
+  999  cat ospC6.labels.sed 
+ 1000  sed -i  's/d8/d9/g' ospC5.labels.sed 
+ 1001  cat ospC5.labels.sed 
+ 1002  cat d9ospC-alleles.fas 
+ 1003  cat ospC5.labels.sed 
+ 1004  echo cat d9ospC-alleles.fas 
+ 1005  mvar=cat
+ 1006  $myvar d9ospC-alleles.fas 
+ 1007  $mvar d9ospC-alleles.fas 
+ 1008  cat ospC4.labels.sed 
+ 1009  cat ospC3.labels.sed 
+ 1010  while read $line; do $line d9ospC-alleles.fas ;done <ospC3.labels.sed 
+ 1011  while read $line; do sudo $line d9ospC-alleles.fas ;done <ospC3.labels.sed 
+ 1012  cd epitope_project
+ 1013  ls
+ 1014  head -n50 d7ospC-alleles.fas7
+ 1015  head -n50 d7ospC-alleles.fas
+ 1016  ls
+ 1017  cat genomefinder.txt 
+ 1018  ls
+ 1019  bioseq -l d7ospC-alleles.fas 
+ 1020  cat genomefinder.txt 
+ 1021  bioseq -l d7ospC-alleles.fas |wc 
+ 1022  grep "*CP*" genomefinder.txt 
+ 1023  grep "'\bC\w*'" genomefinder.txt 
+ 1024  grep -o "'\bC\w*'" genomefinder.txt 
+ 1025  grep -o '\bC\w*' genomefinder.txt 
+ 1026  grep -o '\bCP00\w*' d7ospC-alleles.fas  
+ 1027  ls
+ 1028  bioseq -l ospC-alleles.fas 
+ 1029  bioseq -l ospC-alleles.fas |wc
+ 1030  cat genomefinder.txt 
+ 1031  cat genomefinder.txt | wc
+ 1032  bioseq -F -i 'genbank'  BOR29OSPC.gb > BOR29OSPC.nuc
+ 1033  grep '^\>' ospC-alleles.fas 
+ 1034  grep '^>' ospC-alleles.fas 
+ 1035  grep '^>' ospC-alleles.fas | wc
+ 1036  cat genomefinder.txt 
+ 1037  bioseq -F -i 'genbank'  L42896.gb > L42896.nuc
+ 1038  grep '^>' ospC-alleles.fas | wc
+ 1039  grep '^>' ospC-alleles.fas 
+ 1040  cat genomefinder.txt 
+ 1041  bioseq -F -i 'genbank'  L42896.gb > L42896.nuc
+ 1042  bioseq -F -i 'genbank'  CP001535.gb > CP001535.nuc
+ 1043  bioseq -l CP001535.nuc
+ 1044  bioseq -F -i 'genbank'  L42896.1.gb > L42896.1.nuc
+ 1045  bioseq -F -i 'genbank'  L42896.gb > L42896.nuc
+ 1046  ls
+ 1047  bioseq -F -i 'genbank'  BOR29OSPC.gb > BOR29OSPC.nuc
+ 1048  ls
+ 1049  cat .nuc
+ 1050  bioseq -f 'genbank'  L42896.gb > L42896.nuc
+ 1051  bioseq -f L42896 -o 'genbank' > L42896.gb
+ 1052  bioseq -F -i 'genbank'  L42896.gb > L42896.nuc
+ 1053  bioseq -l L42896.nuc
+ 1054  head d7ospC-alleles.fas 
+ 1055  sed -e  "s/BOR29OSPC/L42896/g" d7ospC-alleles.fas 
+ 1056  grep '^>' ospC-alleles.fas 
+ 1057  head d7ospC-alleles.fas 
+ 1058  head -n100 d7ospC-alleles.fas 
+ 1059  bioseq -l  d7ospC-alleles.fas 
+ 1060  sed -e  "s/BOR29OSPC/L42896/g"  d7ospC-alleles.fas 
+ 1061  bioseq -l  d7ospC-alleles.fas 
+ 1062  cat d7ospC-alleles.fas 
+ 1063  grep '^>' d7ospC-alleles.fas 
+ 1064  sed -e  "s/BOR29OSPC/L42896/g"  d7ospC-alleles.fas > d7ospC-alleles.fas 
+ 1065  grep '^>' d7ospC-alleles.fas 
+ 1066  ls
+ 1067  cat d7ospC-alleles.fas7
+ 1068  cat d7ospC-alleles.fas
+ 1069  bioseq -l opsCtreefile.ext 
+ 1070  bioseq -l ospC-alleles.fas
+ 1071  bioseq  -p 're_B0018' CP001422.nuc
+ 1072  bioseq  -p 're:_B0018' CP001422.nuc
+ 1073  CP001422.nuc
+ 1074  cat CP001422.nuc
+ 1075  bioseq  -p 're:_B0018' CP001422.nuc
+ 1076  bioseq  -l  CP001422.nuc
+ 1077  bioseq  -p 're:_B0020' CP001422.nuc
+ 1078  history
+ 1079  ls 
+ 1080  cat d7ospC-alleles.fas 
+ 1081  rm  d7ospC-alleles.fas 
+ 1082  ls 
+ 1083  rm L42896.1.nuc 
+ 1084  ls
+ 1085  bioseq -l d7ospC-alleles.fas 
+ 1086  history
+ 1087  sed -i 's/BBU94A_B19/CP001493  /g' d7ospC-alleles.fas 
+ 1088  bioseq -l d7ospC-alleles.fas 
+ 1089  history
+ 1090  grep '^sed' history
+ 1091  history| grep '^sed'
+ 1092  history |grep 'sed'
+ 1093  history |grep '908'
+ 1094  sed -i 's/BBU64B/CP001422/g' d7ospC-alleles.fas
+ 1095  sed -i 's/BBUCA112A_B0020/CP001484 /g' d7ospC-alleles.fas
+ 1096  sed -i 's/Bbu156a_B19/CP001271  /g' d7ospC-alleles.fas
+ 1097  sed -i 's/BBU118A_B19/CP001535  /g' d7ospC-alleles.fas
+ 1098  sed -i 's/BBU29805_B19/CP001550  /g' d7ospC-alleles.fas
+ 1099  bioseq -l d7ospC-alleles.fas 
+ 1100  sed -i 's/CP001422/CP001422  /g' d7ospC-alleles.fas
+ 1101  bioseq -l d7ospC-alleles.fas 
+ 1102  sed -i 's/BOR29OSPC/L42896/g' d7ospC-alleles.fas 
+ 1103  bioseq -l d7ospC-alleles.fas 
+ 1104  ls
+ 1105  bioseq -l d7ospC-alleles.fas 
+ 1106  cat make-ospc-sed-files.txt 
+ 1107  cut -f1,3,4 /home/btwisto/epitope_project/genomefinder.txt | while read line; do all=$(echo $line | cut -f1 -d' '); state=$(echo $line | cut -f2 -d' '); acc=$(echo $line | cut -f3 -d' '); echo "s/>$acc/>${all}_${state}_${acc}/;"; done > ospC.labels.sed
+ 1108  cat ospC.labels.sed
+ 1109  grep '>*' d7ospC-alleles.fas 
+ 1110  grep '*>' d7ospC-alleles.fas 
+ 1111  history
+ 1112  grep '^>
+ 1113  grep '^>' d7ospC-alleles.fas 
+ 1114  cat ospC.labels.sed
+ 1115  cat make-ospc-sed-files.txt 
+ 1116  wc ospC.labels.sed
+ 1117  cat d7ospC-alleles.fas >d8ospC-alleles.fas 
+ 1118  cat d7ospC-alleles.fas 
+ 1119  for p in d8ospC-alleles.fas 
+ 1120  cat d8ospC-alleles.fas 
+ 1121  cat ospC.labels.sed
+ 1122  while read p; do echo sed -i '$pg' done ospC.labels.sed 
+ 1123  while read p; do echo sed -i '$pg' done <ospC.labels.sed  
+ 1124  while read p; do echo sed -i '$p'  ; done <ospC.labels.sed  
+ 1125  while read p; do echo sed -i "'$p'"  ; done <ospC.labels.sed  
+ 1126  while read p; do echo sed -i "'$pg'"  ; done <ospC.labels.sed  
+ 1127  while read p; do echo sed -i "'$p/g'"  ; done <ospC.labels.sed  
+ 1128  while read p; do echo "${p//\//;}"  ; done <ospC.labels.sed  
+ 1129  while read p; do echo "${p//;}"  ; done <ospC.labels.sed  
+ 1130  while read p; do echo "${p///;}"  ; done <ospC.labels.sed  
+ 1131  while read p; do echo sed -i "'$p/g'"  ; done <2ospC.labels.sed  
+ 1132  while read p; do echo "${p///;}"  ; done <ospC.labels.sed  >ospC2.labels.sed 
+ 1133  cat ospC2.labels.sed 
+ 1134  while read p; do echo sed -i "'$p/g'"  ; done <ospC2.labels.sed  
+ 1135  while read p; do echo sed -i "'$p/g'"  ; done <ospC2.labels.sed  >ospC3.labels.sed 
+ 1136  cat ospC3.labels.sed 
+ 1137  while read p; do $p d8ospC-alleles.fas ; done <ospC3.labels.sed  >d9ospC-alleles.fas 
+ 1138  while read p; do $p d8ospC-alleles.fas; done <ospC3.labels.sed  >d9ospC-alleles.fas 
+ 1139  bioseq -l d9ospC-alleles.fas 
+ 1140  bioseq -l d8ospC-alleles.fas 
+ 1141  while read p; do echo $p  ; done <ospC2.labels.sed  
+ 1142  while read p; do $p d8ospC-alleles.fas  ; done <ospC3.labels.sed  
+ 1143  ls 
+ 1144  cd epitope_project/
+ 1145  ls
+ 1146  nano ./ospCsed.sh
+ 1147  cat ospC3.labels.sed 
+ 1148  nano ./ospCsed.sh
+ 1149  chmod -x ./ospCsed.sh
+ 1150  chmod u+x ./ospCsed.sh
+ 1151  ./ospCsed.sh  d9ospC-alleles.fas 
+ 1152  cat d9ospC-alleles.fas 
+ 1153  cat ospC3.labels.sed 
+ 1154  bioseq -l d9ospC-alleles.fas 
+ 1155  bioseq -t1 d9ospC-alleles.fas >ospC-alleles.aln 
+ 1156  head ospC-alleles.aln
+ 1157  wc  ospC-alleles.aln
+ 1158  cat ospC-alleles.aln > t1ospC-alleles.aln
+ 1159  cat t1ospC-alleles.aln 
+ 1160  muscle -in t1ospC-alleles.aln -out t1ospC.alleles.mscle -clwstrict 
+ 1161  cat t1ospC-alleles.aln 
+ 1162  bioseq -help 
+ 1163  bioseq -t1 d9ospC-alleles.fas >t1ospC-alleles.fas 
+ 1164  cat t1ospC-alleles.fas
+ 1165  muscle -in t1ospC-alleles.fas -out t1ospC.alleles.alm -clwstrict 
+ 1166  cat t1ospC-alleles.aln
+ 1167  muscle -in t1ospC-alleles.fas -out t1ospC.alleles.aln -clwstrict 
+ 1168  cat t1ospC-alleles.aln
+ 1169  muscle -in t1ospC-alleles.fas -out t1ospC-alleles.aln -clwstrict 
+ 1170  cat t1ospC-alleles.aln
+ 1171  ls 
+ 1172  rm t1ospC.alleles.mscle 
+ 1173  ls
+ 1174  rm t3d7ospC-alleles.fas 
+ 1175  cat t1ospC.aln
+ 1176  cat t1ospC-alleles.aln
+ 1177  ls 
+ 1178  bioseq -help
+ 1179  ls
+ 1180  cat t1ospC-alleles.aln
+ 1181  grep "^G_RI" t1ospC-alleles.aln
+ 1182  grep "^G_RI" t1ospC-alleles.aln  >gr_ri.txt
+ 1183  cat gr_ri.txt 
+ 1184  cut -f2  gr_ri.txt
+ 1185  cut -f1 -d
+ 1186  cut -f2 -d " "  gr_ri.txt
+ 1187  cut -f1 -d " "  gr_ri.txt
+ 1188  cat gr_ri.txt > gr_ri.csv
+ 1189  cut -f2 -d " "  gr_ri.csv
+ 1190  cut -f1 -d " "  gr_ri.csv
+ 1191  cat   gr_ri.csv
+ 1192  cat   gr_ri.txt
+ 1193  grep "^G_RI" t1ospC-alleles.aln
+ 1194  grep "^G_RI" t1ospC-alleles.aln  >gr_ri.txt
+ 1195  cat gr_ri.txt 
+ 1196  grep "^G_RI" t1ospC-alleles.aln | sed 's/       /,/g' 
+ 1197  grep "^G_RI" t1ospC-alleles.aln | cut -d ' ' -f1
+ 1198  grep "^G_RI" t1ospC-alleles.aln | cut -d ' ' -f2
+ 1199  grep "^G_RI" t1ospC-alleles.aln | cut -d ' ' -f1
+ 1200  grep "^G_RI" t1ospC-alleles.aln | awk '{print $1;}'
+ 1201  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'
+ 1202  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| tr -d  't\n\r'
+ 1203  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'|
+ 1204  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| tr -d  't\n\r'
+ 1205  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| tr -d "[:space:]"
+ 1206  grep "^G_RI" t1ospC-alleles.aln | sed 's/*[A-Z]*/,
+ 1207  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| sed 's/.\{2\}/&,/g'
+ 1208  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| sed 's/.\{1\}/&,/g'
+ 1209  grep "^G_RI" t1ospC-alleles.aln | sed 's/.\{1\}/&,/g'
+ 1210  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| sed 's/.\{1\}/&,/g'
+ 1211  grep "^G_RI" t1ospC-alleles.aln | awk '{print $2;}'| sed 's/.\{1\}/&,/g'|wc
+ 1212  ls
+ 1213  mv immune-output.txt  /home/btwisto/epitope_project/
+ 1214  cd /home/btwisto/epitope_project/
+ 1215  ls
+ 1216  less immune-output.txt 
+ 1217  bioaln --pair-diff t1ospC-alleles.aln 
+ 1218  less immune-output.txt 
+ 1219  grep ">" t1ospC-alleles.fas 
+ 1220  grep ">" t1ospC-alleles.fas | cut -f1 -d"|"
+ 1221  grep ">" t1ospC-alleles.fas | cut -f1 -d"_"
+ 1222  grep ">" t1ospC-alleles.fas | cut -f1 -d"_" | sort
+ 1223  bioseq --main
+ 1224  bioaln --main
+ 1225  cat t1ospC-alleles.csv
+ 1226  cut -f1 t1ospC-alleles.csv
+ 1227  cat cut -f1 t1ospC-alleles.csv
+ 1228* sed 
+ 1229  cat t1ospC-alleles.csv >t2.csv
+ 1230  sed -e 's/\(\_\).*\(,&\)/ /g' t2.csv
+ 1231  sed 's/\_.*\,//g'  t2.csv
+ 1232  cat t2.csv
+ 1233  sed 's/\_.*^\,//g'  t2.csv
+ 1234  sed 's/\_.*^,//g'  t2.csv
+ 1235  echo 'abcd:bcde:cdeaf' | sed 's/^[^:]*://g'
+ 1236  echo 'abcd_bcde,cdeaf' | sed 's/^[^_]*,//g'
+ 1237  echo 'abcd_bcde,cdeaf' | sed 's/^[^\_]*\,//g'
+ 1238  echo 'abcd_bcde,cdeaf' | sed 's/^[^\_]*,//g'
+ 1239  echo 'abcd_bcde,cdeaf' | sed 's/^[^_]*://g'
+ 1240  echo 'abcd:bcde:cdeaf' | sed 's/^[^:]*://g'
+ 1241  echo 'abcd:bcde:cdeaf' | sed 's/_[^_]*,//g' t2.csv
+ 1242  echo 'abcd:bcde:cdeaf' | sed 's/_[^_]*.,//g' t2.csv
+ 1243  echo 'abcd:bcde:cdeaf' | sed 's/_[^,]*.,//g' t2.csv
+ 1244  echo 'abcd:bcde:cdeaf' | sed 's/_[^,]*,//g' t2.csv
+ 1245  echo 'abcd:bcde:cdeaf' | sed 's/_[^,]*.,//g' t2.csv
+ 1246  echo 'abcd:bcde:cdeaf' | sed 's/_[^,]*.//g' t2.csv
+ 1247  echo 'abcd:bcde:cdeaf' | sed 's/_[^,]*.,//g' t2.csv
+ 1248  sed 's/_[^,]*,/,/' t2.csv
+ 1249  sed -i 's/_[^,]*,/,/' t1ospC-alleles.csv
+ 1250  cat t1ospC-alleles.csv
+ 1251  ls
+ 1252  cat t1ospC-allele.fas
+ 1253  cat t1ospC-alleles.fas
+ 1254  cat t1ospC-alleles.aln
+ 1255  sed  's/_[^ ]*,/,/' t1ospC-alleles.aln
+ 1256  sed  's/_[^ ]* /  /' t1ospC-alleles.aln
+ 1257  sed  's/_[^ ]* //' t1ospC-alleles.aln
+ 1258  sed  's/_[^]*//' t1ospC-alleles.aln
+ 1259  sed  's/_[^ ]*//' t1ospC-alleles.aln
+ 1260  sed  's/_[^ ]* //' t1ospC-alleles.aln
+ 1261  sed  's/_[^ ]*. //' t1ospC-alleles.aln
+ 1262  sed  's/_*. //' t1ospC-alleles.aln
+ 1263  sed  's/_* //' t1ospC-alleles.aln
+ 1264  sed  's/_[^ ]*.//' t1ospC-alleles.aln
+ 1265  sed  's/_.* //' t1ospC-alleles.aln
+ 1266  sed  's/_.* / /' t1ospC-alleles.aln
+ 1267  ls 
+ 1268  cat d9ospC-alleles.fas 
+ 1269  sed  's/_.* / /' d9ospC-alleles.fas 
+ 1270  cat  d9ospC-alleles.fas 
+ 1271  sed  's/_.*\./ /' d9ospC-alleles.fas 
+ 1272  sed  's/_.*\.//' d9ospC-alleles.fas 
+ 1273  sed  's/_.*\.//' d9ospC-alleles.fas > d10ospC-alleles.fas 
+ 1274  cat d10ospC-alleles.fas 
+ 1275  bioseq -t1 d10ospC-alleles.fas >ospC.ptn 
+ 1276  cat ospC.ptn
+ 1277  muscle -ospC.ptn   -ospC.aln  -clwstrict 
+ 1278  muscle -in ospC.ptn   -out ospC.aln  -clwstrict 
+ 1279  cat ospC.aln
+ 1280  ls 
+ 1281  ls
+ 1282  sed  's/_.*\.//' d9ospC-alleles.fas 
+ 1283  sed  's/_.*\ //' d9ospC-alleles.fas 
+ 1284  sed  's/_.*\ / /' d9ospC-alleles.fas 
+ 1285  sed  's/_.*\ / /' d9ospC-alleles.fas >d10ospC-alleles.fas 
+ 1286  bioseq -t1 d10ospC-alleles.fas >ospC.fas 
+ 1287  cat ospC.fas
+ 1288  muscle -in ospC.fas   -out ospC.aln  -clwstrict 
+ 1289  cat ospC.aln
+ 1290  for i (1..2); do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1291  for i {1..2}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1292  for i {1..2}; do end=${((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1293* for i (1..2); do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1294  for i in {1..2}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1295  ls
+ 1296  cat ospC.aln
+ 1297  for i in {1..2}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1298  for i in {10..15}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1299  for i in {50..60}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1300  cat windowout.csv
+ 1301  for i in {1..2}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1302  for i in {30..32}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1303  opsC.aln
+ 1304  cat opsC.aln
+ 1305  cat ospC.aln
+ 1306  cat ospC.aln | grep -aob "^-"
+ 1307  cat ospC.aln | grep -aob "-"
+ 1308  cat ospC.aln | grep -aob "^\-"
+ 1309  cat ospC.aln | grep -aob "[^-]"
+ 1310  cat ospC.aln | grep -aob "^-"
+ 1311  cat ospC.aln | grep -aob -m 1 "-"
+ 1312  cat ospC.aln | grep -o -a -m 1 -h -r "-" | head -1
+ 1313  cat ospC.aln | grep -aob  -m 1 -h -r "-" | head -1
+ 1314  for i in {1..1}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1315  for i in {10..10}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1316  ospC.aln
+ 1317  cat ospC.aln
+ 1318  for i in {10..11}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  
+ 1319  cat ospC.aln
+ 1320* for i in {10..11}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff ; done >windowout.csv  
+ 1321  l
+ 1322  ls -lrt
+ 1323  less windowout.csv 
+ 1324  for i in {10..11}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff; done >windowout.csv  2> error
+ 1325  less error 
+ 1326  less windowout.csv 
+ 1327* bioaln --pair-diff ospC.aln
+ 1328  head (bioaln --pair-diff ospC.aln)
+ 1329  head -n50  bioaln --pair-diff ospC.aln
+ 1330  cat  bioaln --pair-diff ospC.aln | echo "1 \t 2" 
+ 1331  cat  bioaln --pair-diff ospC.aln | echo -ne  "1 \t 2" 
+ 1332  cat  bioaln --pair-diff ospC.aln | sed 's/$/all \t ok/g'
+ 1333  cat  bioaln --pair-diff ospC.aln | sed 's/$/\t all \t ok/g'
+ 1334  for i in {1..40}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed 's/$/\t $i \t $end/g' ; done >windowout.csv  2> error
+ 1335  for i in {1..3}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed 's/$/\t $i \t $end/g' ; done >windowout.csv  2> error
+ 1336  cat windowout.csv
+ 1337  for i in {1..3}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed 's/$/\t \$i \t \$end/g' ; done >windowout.csv  2> error
+ 1338  cat windowout.csv
+ 1339  for i in {1..3}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed s/$/\t \$i \t \$end/g" ; done >windowout.csv  2> error
+ 1340  for i in {1..3}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed "s/$/\t \$i \t \$end/g" ; done >windowout.csv  2> error
+ 1341  cat windowout.csv
+ 1342  for i in {1..3}; do end=$((i + 20)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed "s/$/\t $i \t $end/g" ; done >windowout.csv  2> error
+ 1343  cat windowout.csv
+ 1344  cat ospC.aln
+ 1345  for i in {1..3}; do end=$((i + 50)) ; bioaln -s "$i,$end" ospC.aln | bioaln --pair-diff |sed "s/$/\t $i \t $end/g" ; done >windowout.csv  2> error
+ 1346  cat windowout.csv
+ 1347  history
+ 1348  history >his.txt
